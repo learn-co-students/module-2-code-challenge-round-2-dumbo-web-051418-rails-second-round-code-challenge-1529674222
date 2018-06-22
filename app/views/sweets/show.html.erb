@@ -1,0 +1,8 @@
+<%= @sweet.name %>
+<%= @sweet.vendor_sweet.comment %>
+<br>
+
+<% @sweet.vendor_sweets.each do |sweet| %>
+<%= link_to vendor_sweets.vendor.name, vendor_path(@vendor_sweets.vendor) %>
+<% end %>
+<br>
