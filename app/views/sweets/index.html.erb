@@ -1,7 +1,7 @@
 <h1>All Sweets</h1>
-
+<!-- sweets index page, clicking on a sweet's name should take us to the sweet's show view. -->
 <ul>
   <% @sweets.each do |sweet| %>
-    <li><%= sweet.name %></li>
+    <li><%= link_to sweet.name, sweet_path(sweet)%></li>
   <% end  %>
 </ul>

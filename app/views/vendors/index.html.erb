@@ -1,7 +1,8 @@
 <h1>All Vendors</h1>
+<!-- vendors index page, clicking on a vendor's name should take us to the vendor's show view. -->
 
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= vendor.name %></li>
+    <li><%= link_to vendor.name, vendor_path(vendor)%></li>
   <% end  %>
 </ul>
