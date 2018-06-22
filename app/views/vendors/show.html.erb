@@ -1,0 +1,12 @@
+<%= @vendor.name %>
+
+<% @vendor.sweets.each do |sweet| %>
+<%= sweet.name %>
+<% end %>
+
+ <%= form_for @vendor_sweet do |f| %>
+ <%= f.hidden_field :vendor_id, value: params[:id]%>
+ <%= f.collection_select :sweet_id, Sweet.all, :id, :name %>
+
+<%= f.submit "Enter" %>
+ <% end %>
