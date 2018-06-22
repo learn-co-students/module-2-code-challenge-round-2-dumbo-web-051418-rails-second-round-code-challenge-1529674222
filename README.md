@@ -21,29 +21,29 @@ The Flatiron staff has request your help! Here at flatiron we tend to consume lo
 
 ![img](https://media.giphy.com/media/HGe4zsOVo7Jvy/giphy.gif)
 
-Visiting `/sweets` will list all of the sweets. Visiting `/vendors` will list all of our sweet's vendors. The Models, Views and Controllers for the sweets and vendors resources already exist. The problem is that we don't have a way to associate all the sweets with their vendors. **Vendors can sell many different sweets and sweets can be sold by many different vendors.** 
+Visiting `/sweets` will list all of the sweets. Visiting `/vendors` will list all of our sweet's vendors. The Models, Views and Controllers for the sweets and vendors resources already exist. The problem is that we don't have a way to associate all the sweets with their vendors. **Vendors can sell many different sweets and sweets can be sold by many different vendors.**
 
 ## Instructions / Deliverables
 
 ***To help complete this task we spell out the required steps below. Look through them carefully to get a sense of the requirements of this code challenge, then tackle them one by one.***
 
-1. On the vendors index page, clicking on a vendor's name should take us to the vendor's show view.
+1. On the vendors index page, clicking on a vendor's name should take us to the vendor's show view. ****
 
-2. On the sweets index page, clicking on a sweet's name should take us to the sweet's show view.
+2. On the sweets index page, clicking on a sweet's name should take us to the sweet's show view. ****
 
-3. The sweet show view should include the sweet's name and have a list of all the vendors that sell this sweet.
+3. The sweet show view should include the sweet's name and have a list of all the vendors that sell this sweet. *****
 
-4. On this show view, clicking on a vendor should take you to that vendor's show view.
+4. On this show view, clicking on a vendor should take you to that vendor's show view. ***
 
-5. The vendor's show view should list all the sweets they sell.
+5. The vendor's show view should list all the sweets they sell. ****
 
-6. In The vendor's show view there should be a form that will allow us to associat the sweet with a vendor.
+6. In The vendor's show view there should be a form that will allow us to associate the sweet with a vendor. ***
 
-7. The `vendor_sweet` association form will allow us to:
+7. The `vendor_sweet` association form will allow us to: ***
   * Select a sweet from a dropdown.
   * Leave a comment.
 
-8. Make sure that every `vendor_sweet` association record **MUST** include a sweet and a comment.
+8. Make sure that every `vendor_sweet` association record **MUST** include a sweet and a comment. ***
 
 9. Make sure the flatiron staff cannot add more than one of the same sweets to a vendor.
 
