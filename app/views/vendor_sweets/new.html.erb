@@ -1,0 +1,9 @@
+<%= form_for @vendor_sweet do |f| %>
+<%= f.label "Sweets" %>
+<%= f.collection_select(:sweet_id, @sweets, :id, :name)%>
+<%= f.label "Vendors" %>
+<%= f.collection_select(:vendor_id, @vendors, :id, :name)%>
+<%= f.label "Comment" %>
+<%= f.text_field :comment %>
+<%= f.submit %>
+<% end %>

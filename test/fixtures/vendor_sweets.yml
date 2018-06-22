@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  comment: MyText
+  vendor: one
+  sweet: one
+
+two:
+  comment: MyText
+  vendor: two
+  sweet: two

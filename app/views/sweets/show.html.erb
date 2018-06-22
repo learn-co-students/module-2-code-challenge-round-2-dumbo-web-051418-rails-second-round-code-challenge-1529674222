@@ -1,0 +1,7 @@
+<%= @sweet.name %>
+<%= # trying to add in the comment associated to that sweet that's on the vendor's show page %>
+
+
+<% @sweet.vendors.each do |vendor| %>
+  <li><%= link_to vendor.name, vendor_url(vendor) %></li>
+<% end %>
