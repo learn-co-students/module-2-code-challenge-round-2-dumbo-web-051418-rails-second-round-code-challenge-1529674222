@@ -1,0 +1,8 @@
+<!-- The sweet show view should include the sweet's name and have a list of all the vendors that sell this sweet. -->
+<!-- On this show view, clicking on a vendor should take you to that vendor's show view. -->
+<h3><%= @sweet.name %></h3><br>
+<%= @sweet.vendors.map do |vendor| %>
+<li>
+    <%= link_to vendor.name, vendor_path(vendor) %>
+</li>
+<% end  %>
