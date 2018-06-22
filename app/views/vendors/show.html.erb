@@ -1,0 +1,18 @@
+<!-- In The vendor's show view there should be a form that will allow us to associat the sweet with a vendor. -->
+
+<%= form_for @vendor_sweet, :url => url_for(:controller => 'vendor_sweets', :action => 'create') do |f| %>
+  <%= f.hidden_field :vendor_id, :value => params[:id] %>
+  <%= f.label :sweet %>
+  <%= f.collection_select :sweet_id, Sweet.all, :id, :name%>
+  <%= f.label :comment %>
+  <%= f.text_field :comment %>
+  <%= f.submit  %>
+<% end %>
+
+<!-- The vendor's show view should list all the sweets they sell. -->
+<ul>
+  <h2>Sweets Belonging To This Vendor:</h2>
+  <% @vendor.vendor_sweets.to_ary.each do |s| %>
+    <li><%= s.sweet.name %>, Comment: <%= s.comment %></li>
+  <% end %>
+</ul>
