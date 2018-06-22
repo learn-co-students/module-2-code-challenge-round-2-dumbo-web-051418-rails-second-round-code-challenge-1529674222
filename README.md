@@ -21,13 +21,14 @@ The Flatiron staff has request your help! Here at flatiron we tend to consume lo
 
 ![img](https://media.giphy.com/media/HGe4zsOVo7Jvy/giphy.gif)
 
-Visiting `/sweets` will list all of the sweets. Visiting `/vendors` will list all of our sweet's vendors. The Models, Views and Controllers for the sweets and vendors resources already exist. The problem is that we don't have a way to associate all the sweets with their vendors. **Vendors can sell many different sweets and sweets can be sold by many different vendors.** 
+Visiting `/sweets` will list all of the sweets. Visiting `/vendors` will list all of our sweet's vendors. The Models, Views and Controllers for the sweets and vendors resources already exist. The problem is that we don't have a way to associate all the sweets with their vendors. **Vendors can sell many different sweets and sweets can be sold by many different vendors.**
 
 ## Instructions / Deliverables
 
 ***To help complete this task we spell out the required steps below. Look through them carefully to get a sense of the requirements of this code challenge, then tackle them one by one.***
 
 1. On the vendors index page, clicking on a vendor's name should take us to the vendor's show view.
+<!-- 1. link every vendors.name to the venders show view -->
 
 2. On the sweets index page, clicking on a sweet's name should take us to the sweet's show view.
 

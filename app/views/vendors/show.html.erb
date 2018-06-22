@@ -1,0 +1,13 @@
+<h1><%= @vendor.name %></h1>
+
+<%= form_for @vendor do |f| %>
+  <%= f.collection_select :sweets, Sweet.all, :id, :name %>
+  <%= f.submit "continue" %>
+<% end %>
+
+<!--
+6. In The vendor's show view there should be a form that will allow us to associat the sweet with a vendor.
+
+7. The `vendor_sweet` association form will allow us to:
+  * Select a sweet from a dropdown.
+  * Leave a comment. -->
