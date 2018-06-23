@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20180622140950) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "comment"
   end
 
   create_table "vendors_sweets", force: :cascade do |t|
@@ -30,6 +29,7 @@ ActiveRecord::Schema.define(version: 20180622140950) do
     t.integer "vendor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "comment"
     t.index ["sweet_id"], name: "index_vendors_sweets_on_sweet_id"
     t.index ["vendor_id"], name: "index_vendors_sweets_on_vendor_id"
   end

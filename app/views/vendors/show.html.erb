@@ -1,15 +1,25 @@
 <!-- The vendor's show view should list all the sweets they sell. -->
 <!-- In The vendor's show view there should be a form that will allow us to associat the sweet with a vendor. -->
 <h3><%= @vendor.name %></h3><br>
-<%= @vendor.sweets.map do |sweet| %>
+<% @vendor.sweets.each do |sweet| %>
 <li>
-    <%= link_to sweet.name, sweet_path(vendor) %>
+    <%= link_to sweet.name, sweet_path(sweet) %>
+    <ul>
+      comments:
+      <li>
+        <%= sweet.vendors_sweets.first.comment %>
+      </li>
+
+    </ul>
+
 </li>
 <% end  %>
 <br>
 <hr>
 <h4>Add a Sweet -</h4><br>
-<%= form_for @vendor_sweet do |f| %>
+<%= form_for @vendors_sweet do |f| %>
+  <%= f.hidden_field :vendor_id, :value => params[:id] %>
   <%= f.collection_select(:sweet_id, @sweets, :id, :name) %>
   <%= f.text_field :comment %>
+  <%= f.submit %>
 <% end %>
